@@ -19,6 +19,7 @@ Sky remote skin by DJBenson.
 Fire a POST or GET request to `http://localhost:29152/control/`
 
 If using GET, append query parameters `?ip=192.168.0.16&command=pause`
+
 If using POST, send a JSON payload `{ip: 192.168.0.16, command: 'pause'}`
 
 Available commands are equivalent to the same button presses on the Sky Remote:
