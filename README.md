@@ -30,7 +30,8 @@ Sky remote skin by DJBenson.
 
 Fire a POST or GET request to `http://localhost:29152/control/`
 
-If using GET (eg: for use with Domoticz dummy switches or homebridge), append query parameters `?ip=192.168.0.16&command=pause`...
+If using GET (eg: for use with Domoticz dummy switches or homebridge), 
+append query parameters `?ip=192.168.0.16&command=pause`...
 
 If using POST, send a JSON payload `{ip: 192.168.0.16, command: 'pause'}`...
 
