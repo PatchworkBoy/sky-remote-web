@@ -14,7 +14,13 @@ app.post('/control', function(req, res) {
 		res.end('OK');
 	});
 });
-
+app.get('/control', function(req, res) {
+	var remoteControl = new SkyRemote(req.query.ip);
+	remoteControl.press(req.query.command,function() {
+    	console.log(req.query.command);
+		res.end('OK');
+	});
+});
 app.listen(27592, function() {
 	console.log("http://127.0.0.1:27592");
 });
