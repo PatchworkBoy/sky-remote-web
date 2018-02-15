@@ -4,6 +4,17 @@ Combined http request / Web interface for sending remote control commands to a S
 
 It is basic and *was* ugly, but functional.
 
+#### Installation
+
+Clone the repo.
+
+```
+git clone https://github.com/PatchworkBoy/sky-remote-web.git
+cd sky-remote-web
+npm install
+node sky-remote-web.js
+```
+
 #### Usage - Web Control
 
 Just start the script, and then open a browser at `http://localhost:29152`.
@@ -14,13 +25,19 @@ Nothing more to it.
 
 Sky remote skin by DJBenson.
 
+
 #### Usage - HTTP Request
 
 Fire a POST or GET request to `http://localhost:29152/control/`
 
-If using GET, append query parameters `?ip=192.168.0.16&command=pause`
+If using GET, append query parameters `?ip=192.168.0.16&command=pause`...
 
-If using POST, send a JSON payload `{ip: 192.168.0.16, command: 'pause'}`
+If using POST, send a JSON payload `{ip: 192.168.0.16, command: 'pause'}`...
+
+...where ip is the IP Address of the Sky box you wish to control, and command is from the list below.
+
+
+#### Available Commands
 
 Available commands are equivalent to the same button presses on the Sky Remote:
 * power,
