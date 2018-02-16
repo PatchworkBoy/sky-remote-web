@@ -17,7 +17,7 @@ node sky-remote-web.js
 
 #### Usage - Web Control
 
-Just start the script, and then open a browser at `http://localhost:29152`.
+Just start the script, and then open a browser at `http://localhost:27592`.
 
 Ensure the text box at the top of the page contains the IP address of your Sky box.
 
@@ -28,7 +28,7 @@ Sky remote skin by DJBenson.
 
 #### Usage - HTTP Request
 
-Fire a POST or GET request to `http://localhost:29152/control/`
+Fire a POST or GET request to `http://localhost:27592/control/`
 
 If using GET (eg: for use with Domoticz dummy switches or homebridge), 
 append query parameters `?ip=192.168.0.16&command=pause`...
